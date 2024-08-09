@@ -7,7 +7,7 @@ const Hero = () => {
         <h1 className="text-center lg:mt-6 font-bold text-3xl md:text-5xl lg:text-6xl">
             Learning from Data< br/> Innovating with AI
         </h1>
-        <div className="mt-12 md:mt-20 lg:mt-28">
+        <div id="about" className="mt-12 scroll-mt-8 md:mt-20 lg:mt-28">
             <h2 className="font-bold text-2xl md:text-4xl text-black dark:text-white">
                 Hello! I'm Nico.
             </h2>

@@ -22,19 +22,19 @@ const Navbar = () => {
   const links = [
     {
       name: "About",
-      link: "/about",
+      link: "#about",
     },
     {
       name: "Projects",
-      link: "/projects",
+      link: "#projects",
     },
     {
       name: "Experience",
-      link: "/experience",
+      link: "#experience",
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
     },
   ];
 
