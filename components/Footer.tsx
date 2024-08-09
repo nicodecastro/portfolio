@@ -3,7 +3,7 @@ import userData from "@/constants/data";
 const Footer = () => {
     return (
       <div className="bg-[#F7F7F7] dark:bg-[#0E0E0E]">
-        <footer className="max-w-7xl mx-auto px-6 py-10 md:py-20 md:px-12 lg:px-20">
+        <footer className="max-w-6xl mx-auto px-6 py-10 md:py-20 md:px-12 lg:px-20">
           <hr className="w-full border-1 border-gray-200 dark:border-gray-300 mb-8"/>
           <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center">
             <div>

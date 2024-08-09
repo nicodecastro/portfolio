@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav className="">
-      <div className="max-w-7xl mx-auto px-6 py-10 md:py-20 md:px-12 lg:px-20">
+      <div className="max-w-6xl mx-auto px-6 py-10 md:py-20 md:px-12 lg:px-20">
         <div className="flex justify-between items-center h-16">
 
           <div className="flex items-center">
@@ -115,9 +115,9 @@ const Navbar = () => {
       </div>
       {isClick && (
         <div className='md:hidden'>
-          <div className='px-6 space-y-1'>
+          <div className='absolute inset-x-0 mx-auto top-20 flex flex-col w-[90%] p-4 rounded-lg shadow-xl z-[999] bg-white dark:bg-[#1E1E1E] divide-y dark:divide-gray-800'>
             {links.map((el) => (
-                  <Link href={el.link} key={el.name} onClick={toggleNavbar} className="block text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 p-2">
+                  <Link href={el.link} key={el.name} onClick={toggleNavbar} className="relative px-1 py-4 text-sm text-gray-600 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-200">
                     {el.name}
                   </Link>
                 ))}

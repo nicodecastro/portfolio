@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section id="hero" className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mb-16 md:mb-24">
+    <section id="hero" className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 mb-16 md:mb-24">
         <h1 className="text-center lg:mt-6 font-bold text-3xl md:text-5xl lg:text-6xl">
             Learning from Data< br/> Innovating with AI
         </h1>

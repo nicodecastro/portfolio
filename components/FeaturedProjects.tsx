@@ -5,7 +5,7 @@ import FeaturedProjectCard from './FeaturedProjectCard'
 
 const FeaturedProjects = () => {
   return (
-    <section id="featured-projects" className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20 mb-16 md:mb-24">
+    <section id="featured-projects" className="mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 md:mb-24">
         <header className="flex flex-col md:flex-row justify-between items-center pt-16">
           <h2 className="font-bold text-5xl text-center mb-16 lg:text-6xl text-black dark:text-white">
             Featured Projects
