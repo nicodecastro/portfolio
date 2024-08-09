@@ -5,19 +5,28 @@ const userData = {
     address: "Santa Rosa City, Laguna, Philippines",
     projects: [
         {
-            title: "A Mage's Return",
-            link: "https://github.com/okkinn/A-Mages-Return",
-            imgUrl: "/projects/amagesreturn.png",
-        },
-        {
-            title: "Generic Solvers App",
-            link: "https://github.com/okkinn/Generic-Solvers-App",
-            imgUrl: "/projects/genericsolversapp.png",
-        },
-        {
             title: "AgriConnect",
             link: "https://github.com/okkinn/AgriConnect",
             imgUrl: "/projects/agriconnect.png",
+            imgAlt: "Agriconnect E-commerce Web App card",
+            description: "Led the project management for the development of an academic e-commerce web app project connecting farmers and consumers through a farm-to-table initiative. Managed a team of four, overseeing the planning and execution to ensure timely and successful completion.",
+            technologies: ["React", "Express", "MongoDB", "NodeJS", "REST API"],
+        },
+        {
+            title: "A Mage's Return",
+            link: "https://github.com/okkinn/A-Mages-Return",
+            imgUrl: "/projects/amagesreturn.png",
+            imgAlt: "A Mage's Return Game card",
+            description: "A Java-based shooter game developed using the JavaFX library. A academic mini-project to practice the design and application of OOP concepts—Abstraction, Encapsulation, Inheritance, and Polymorphism—in a working project.",
+            technologies: ["Java", "JavaFX", "OOP"],
+        },
+        {
+            title: "Generic Solvers App",
+            link: "https://okkinn.shinyapps.io/CMSC150Project/",
+            imgUrl: "/projects/genericsolversapp.png",
+            imgAlt: "Generic Solvers Web App",
+            description: "Developed an R application that provides generic solvers for quadratic spline interpolation and polynomial regression, and a simplex implementation for the diet optimization problem. It consists of a shiny app deployed using shinyApp.",
+            technologies: ["R", "Shiny", "ShinyApps"],
         },
     ],
     about: {

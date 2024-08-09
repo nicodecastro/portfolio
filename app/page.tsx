@@ -4,10 +4,12 @@ import CallToAction from "@/components/CallToAction";
 
 const Home = () => {
   return (
-    <main className="mx-auto max-w-7xl px-8 lg:px-20">
+    <main className="">
         <Hero />
-        <FeaturedProjects />
-        <CallToAction />
+        <div className="bg-[#F7F7F7] dark:bg-[#0E0E0E]">
+          <FeaturedProjects />
+          <CallToAction />
+        </div>
     </main>
   )
 }
