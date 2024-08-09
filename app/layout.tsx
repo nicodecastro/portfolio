@@ -1,12 +1,13 @@
 import '../styles/globals.css';
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from 'next-themes'
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 
 export const metadata = {
-    title: "Nico De Castro - Software Engineer",
-    description: "A 20-year old aspiring software engineer studying at the University of the Philippines Los Baños",
+    title: "Nico De Castro - CS Student",
+    description: "A 20-year old computer science student studying at the University of the Philippines Los Baños",
 }
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,11 +18,13 @@ const RootLayout = ({
     children: React.ReactNode
 }) => {
   return (
-    <html lang="en">
-        <body className={inter.className}>
-            <Navbar />
-            {children}
-            <Footer />
+    <html lang="en" suppressHydrationWarning>
+        <body className={inter.className} suppressHydrationWarning>
+            <ThemeProvider enableSystem={false} attribute="class">
+                <Navbar />
+                {children}
+                <Footer />
+            </ThemeProvider>
         </body>
     </html>
   )

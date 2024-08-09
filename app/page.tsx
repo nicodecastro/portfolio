@@ -1,26 +1,13 @@
+import Hero from "@/components/Hero";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import CallToAction from "@/components/CallToAction";
 
 const Home = () => {
   return (
-    <main>
-        <section id="hero">
-            Hero
-        </section>
-
-        <section id="projects">
-            Projects
-        </section>
-
-        <section id="skills">
-            Skills
-        </section>
-
-        <section id="resume">
-            Resume
-        </section>
-
-        <section id="contact">
-            Contact
-        </section>
+    <main className="mx-auto max-w-7xl px-8 lg:px-20">
+        <Hero />
+        <FeaturedProjects />
+        <CallToAction />
     </main>
   )
 }
