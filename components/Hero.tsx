@@ -1,4 +1,5 @@
 import userData from '@/constants/data'
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
         </h1>
         <div id="about" className="mt-16 scroll-mt-8 md:mt-24 lg:mt-28 flex flex-col items-start justify-between md:flex-row">
             <div className="p-4 md:ml-4 overflow-hidden md:order-last">
-                <img src={userData.avatarUrl} className="rounded shadow-lg ring-1 ring-black/5 w-28 h-28 object-cover md:object-contain md:h-[100%] md:w-[200px]" alt="Nico De Castro profile image"/>
+                <Image src={userData.avatarUrl} height={100} width={200} className="rounded shadow-lg ring-1 ring-black/5 w-28 h-28 object-cover md:object-contain md:h-[100%] md:w-[200px]" alt="Nico De Castro profile image"/>
             </div>
             <div className="mt-4 md:w-3/4">
                 <h2 className="font-bold text-2xl md:text-4xl text-black dark:text-white">

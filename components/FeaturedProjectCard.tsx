@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 const FeaturedProjectCard = ({props}: any) => {
     return (
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 md:gap-4">
             <div className="w-[200px] sm:w-1/4 sm:flex-shrink-0">
-                <img src={props.imgUrl} width="200" className="rounded border-2 border-gray-300 hover:border-gray-400 dark:border-gray-500 dark:hover:border-gray-400 shadow-md transition duration-0.3 ease-linear hover:-translate-y-0.5" alt={props.imgAlt}/>
+                <Image src={props.imgUrl} height={100} width={200} className="rounded border-2 border-gray-300 hover:border-gray-400 dark:border-gray-500 dark:hover:border-gray-400 shadow-md transition duration-0.3 ease-linear hover:-translate-y-0.5" alt={props.imgAlt}/>
             </div>
             <div>
                 <header className="flex items-center justify-between gap-2 font-medium leading-tight tracking-tight">
