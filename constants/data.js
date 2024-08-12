@@ -54,7 +54,7 @@ const userData = {
     ],
     socialLinks: {
       twitter: "https://x.com/dcstnic",
-      linkedin: "https://www.linkedin.com/in/nico-de-castro/",
+      linkedin: "https://www.linkedin.com/in/nicodecastro/",
       github: "https://github.com/nicodecastro",
     },
   };
