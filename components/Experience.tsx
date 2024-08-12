@@ -20,7 +20,7 @@ const Experience = () => {
                       <div className="font-semibold">{ele.title}</div>
                       <div className="text-gray-400 text-sm">{ele.company}</div>
                     </h3>
-                    <p className="text-sm mt-2">
+                    <p className="text-sm mt-2 dark:text-gray-200">
                       {ele.desc}
                     </p>
                     <ul>

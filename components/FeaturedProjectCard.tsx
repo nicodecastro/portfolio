@@ -34,7 +34,7 @@ const FeaturedProjectCard = ({props}: any) => {
                         }
                     </div>
                 </header>
-                <div className="mt-3 text-sm">
+                <div className="mt-3 text-sm dark:text-gray-200 leading-normal">
                     {props.description}
                 </div>
                 <ul className="mt-3 flex flex-wrap">

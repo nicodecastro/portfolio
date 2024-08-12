@@ -26,7 +26,7 @@ const TechStack = () => {
     ]
 
   return (
-    <div className="mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 md:mb-24 pt-12 flex flex-col md:flex-row items-center md:gap-4">
+    <div className="mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 md:mb-24 lg:mb-28 pt-12 flex flex-col md:flex-row items-center md:gap-4">
         <h2 className="font-bold text-5xl mb-12 md:mb-0 lg:mr-4 lg:text-6xl text-black dark:text-white md:order-last">
             Tech Stack
         </h2>
