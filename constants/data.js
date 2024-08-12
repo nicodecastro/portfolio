@@ -6,7 +6,7 @@ const userData = {
     projects: [
         {
             title: "AgriConnect",
-            link: "https://github.com/okkinn/AgriConnect",
+            link: "https://github.com/nicodecastro/AgriConnect",
             imgUrl: "/projects/agriconnect.png",
             imgAlt: "Agriconnect E-commerce Web App card",
             description: "Led the project management for the development of an academic e-commerce web app project connecting farmers and consumers through a farm-to-table initiative. Managed a team of four, overseeing the planning and execution to ensure timely and successful completion.",
@@ -14,7 +14,7 @@ const userData = {
         },
         {
             title: "A Mage's Return",
-            link: "https://github.com/okkinn/A-Mages-Return",
+            link: "https://github.com/nicodecastro/A-Mages-Return",
             imgUrl: "/projects/amagesreturn.png",
             imgAlt: "A Mage's Return Game card",
             description: "A Java-based shooter game developed using the JavaFX library. A academic mini-project to practice the design and application of OOP concepts—Abstraction, Encapsulation, Inheritance, and Polymorphism—in a working project.",
@@ -55,7 +55,7 @@ const userData = {
     socialLinks: {
       twitter: "https://x.com/dcstnic",
       linkedin: "https://www.linkedin.com/in/nico-de-castro/",
-      github: "https://github.com/okkinn",
+      github: "https://github.com/nicodecastro",
     },
   };
   
