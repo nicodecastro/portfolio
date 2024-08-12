@@ -1,20 +1,31 @@
 const userData = {
     name: "Nico De Castro",
-    designation: "Computer Science Student",
+    designation: "Laguna, Philippines📍",
     avatarUrl: "/avatar.png",
     address: "Santa Rosa City, Laguna, Philippines",
     projects: [
         {
             title: "AgriConnect",
-            link: "https://github.com/nicodecastro/AgriConnect",
+            liveLink: "",
+            codeLink: "https://github.com/nicodecastro/AgriConnect",
             imgUrl: "/projects/agriconnect.png",
             imgAlt: "Agriconnect E-commerce Web App card",
             description: "Led the project management and contributed full-stack development for an academic e-commerce web app project connecting farmers and consumers through a farm-to-table initiative. Managed a team of four, overseeing the planning and execution to ensure timely and successful completion.",
             technologies: ["React", "Express", "MongoDB", "NodeJS", "REST API"],
         },
         {
+          title: "FoodUP",
+          liveLink: "",
+          codeLink: "https://github.com/nicodecastro/FoodUP",
+          imgUrl: "/projects/foodup.png",
+          imgAlt: "FoodUP Review App card",
+          description: "Developed a food and restaurant review application using Python, Tkinter GUI and MariaDB database. Designed and implemented complex database queries and schema and contributed full-stack development.",
+          technologies: ["Python", "MariaDB"],
+        },
+        {
             title: "A Mage's Return",
-            link: "https://github.com/nicodecastro/A-Mages-Return",
+            liveLink: "",
+            codeLink: "https://github.com/nicodecastro/A-Mages-Return",
             imgUrl: "/projects/amagesreturn.png",
             imgAlt: "A Mage's Return Game card",
             description: "A Java-based shooter game developed using the JavaFX library. An academic mini-project to practice the design and application of OOP concepts—Abstraction, Encapsulation, Inheritance, and Polymorphism—in a working project.",
@@ -22,29 +33,22 @@ const userData = {
         },
         {
             title: "Generic Solvers App",
-            link: "https://okkinn.shinyapps.io/CMSC150Project/",
+            liveLink: "https://okkinn.shinyapps.io/CMSC150Project/",
+            codeLink: "https://github.com/nicodecastro/Generic-Solvers-App",
             imgUrl: "/projects/genericsolversapp.png",
             imgAlt: "Generic Solvers Web App",
-            description: "Developed an R application that provides generic solvers for quadratic spline interpolation and polynomial regression, and a simplex implementation for the diet optimization problem. It consists of a shiny app deployed using shinyApp.",
+            description: "Developed an R application for an academic project that provides generic solvers for quadratic spline interpolation and polynomial regression, and a simplex implementation for the diet optimization problem. It consists of a shiny app deployed using shinyApp.",
             technologies: ["R", "Shiny", "ShinyApps"],
         },
     ],
-    about: {
-      title:
-        "Hi! I'm a full-stack engineer specializing in developing solutions with JavaScript, Python, and PHP.",
-      description: [
-        `I work on projects including websites, web apps, mobile apps, full-stack software development, web scraping and data analytics, SEO, digital marketing, web and graphic design, video production, and code tutorials.`,
-        `I've helped small and medium-size businesses and organizations grow and streamline their processes, improve their online presence, and scale their operations through software solutions. I've also built a community of over 6,000 developers sharing knowledge, mentorship, support, tools, code reviews, answering questions, and much more.`,
-        `When I'm not writing code, I enjoy reading and learning about emerging technologies, minimalism, and startup culture. I share the things I've learned through short videos or on my blog.`,
-      ],
-    },
     experience: [
-    //   {
-    //     title: "Graduation",
-    //     company: "University of Philippines Los Baños",
-    //     year: "2026",
-    //     desc: "Bachelor's degree in Computer Science.",
-    //   },
+      {
+        title: "Finance Co-Head",
+        company: "Kappa Phi Sigma Conservation and Development Society ",
+        year: "NOV 2023 — JAN 2024",
+        desc: "Led financial planning for the Kappanalig 2024 outreach program. Managed transparent financial reporting. Co-led a team of 6 in successful fundraising activities. Efforts resulted in raised 20,000 pesos through donations, sponsorships, and events, benefiting 55 children with essential goods.",
+        skills: ["Team Leadership", "Project Management", "Organizational Skills", "Analytical Skills", "Data-Driven Decision Making"],
+      },
     //   {
     //     title: "Internship",
     //     company: "",
