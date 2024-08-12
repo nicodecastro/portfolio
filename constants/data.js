@@ -17,7 +17,7 @@ const userData = {
             link: "https://github.com/nicodecastro/A-Mages-Return",
             imgUrl: "/projects/amagesreturn.png",
             imgAlt: "A Mage's Return Game card",
-            description: "A Java-based shooter game developed using the JavaFX library. A academic mini-project to practice the design and application of OOP concepts—Abstraction, Encapsulation, Inheritance, and Polymorphism—in a working project.",
+            description: "A Java-based shooter game developed using the JavaFX library. An academic mini-project to practice the design and application of OOP concepts—Abstraction, Encapsulation, Inheritance, and Polymorphism—in a working project.",
             technologies: ["Java", "JavaFX", "OOP"],
         },
         {
