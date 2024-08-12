@@ -19,7 +19,7 @@ const userData = {
           codeLink: "https://github.com/nicodecastro/FoodUP",
           imgUrl: "/projects/foodup.png",
           imgAlt: "FoodUP Review App card",
-          description: "Developed a food and restaurant review application using Python, Tkinter GUI and MariaDB database. Designed and implemented complex database queries and schema and contributed full-stack development.",
+          description: "Developed a food and restaurant review application as an academic project using Python, Tkinter GUI and MariaDB database. Designed and implemented complex database queries and schema and contributed full-stack development.",
           technologies: ["Python", "MariaDB"],
         },
         {
