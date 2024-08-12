@@ -9,7 +9,7 @@ const userData = {
             link: "https://github.com/nicodecastro/AgriConnect",
             imgUrl: "/projects/agriconnect.png",
             imgAlt: "Agriconnect E-commerce Web App card",
-            description: "Led the project management for the development of an academic e-commerce web app project connecting farmers and consumers through a farm-to-table initiative. Managed a team of four, overseeing the planning and execution to ensure timely and successful completion.",
+            description: "Led the project management and contributed full-stack development for an academic e-commerce web app project connecting farmers and consumers through a farm-to-table initiative. Managed a team of four, overseeing the planning and execution to ensure timely and successful completion.",
             technologies: ["React", "Express", "MongoDB", "NodeJS", "REST API"],
         },
         {
