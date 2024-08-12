@@ -5,7 +5,7 @@ import FeaturedProjectCard from './FeaturedProjectCard'
 
 const FeaturedProjects = () => {
   return (
-    <section id="projects" className="mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 md:mb-24">
+    <section id="projects" className="scroll-mt-8 mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 pb-4">
         <header className="flex flex-col md:flex-row justify-between items-center">
           <h2 className="font-bold text-5xl text-center mb-12 lg:text-6xl text-black dark:text-white">
             Featured Projects
@@ -20,11 +20,11 @@ const FeaturedProjects = () => {
             </p>
           </Link>
         </header>
-        <div>
+        <div className="mt-4">
           <ul>
               {
                 userData.projects.map((project, index) => (
-                  <li className="mb-12" key={index}>
+                  <li className="mb-14" key={index}>
                     <FeaturedProjectCard props={project}/>
                   </li>
                 ))
