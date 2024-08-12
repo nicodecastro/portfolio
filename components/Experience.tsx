@@ -3,7 +3,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <section id="experience" className="scroll-mt-8 mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 md:mb-32">
+    <section id="experience" className="scroll-mt-8 mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-20 md:mb-32">
         <h2 className="font-bold text-5xl lg:text-6xl text-black dark:text-white text-center mb-12">
             Experience
         </h2>
