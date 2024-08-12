@@ -9,14 +9,14 @@ const Hero = () => {
         </h1>
         <div id="about" className="mt-16 scroll-mt-8 md:mt-24 lg:mt-28 flex flex-col items-start justify-between md:flex-row">
             <div className="p-4 md:ml-4 overflow-hidden md:order-last">
-                <img src={userData.avatarUrl} className="rounded shadow-xl ring-1 ring-black/5 w-28 h-28 object-cover md:object-contain md:h-[100%] md:w-[200px]" alt="Nico De Castro profile image"/>
+                <img src={userData.avatarUrl} className="rounded shadow-lg ring-1 ring-black/5 w-28 h-28 object-cover md:object-contain md:h-[100%] md:w-[200px]" alt="Nico De Castro profile image"/>
             </div>
             <div className="mt-4 md:w-3/4">
                 <h2 className="font-bold text-2xl md:text-4xl text-black dark:text-white">
                     Hello! I'm Nico.
                 </h2>
                 <p className="mt-3 dark:text-gray-200">
-                    I am currently pursuing a degree in <span className="font-semibold">computer science</span> at the <span className="font-semibold">University of the Philippines Los Baños</span>. Having keen interests in <span className="font-semibold">AI and data science</span>, I aim to specialize in these fields. I have a passion for the continuous pursuit of knowledge and growth and consider it as my <a href="https://bigthink.com/thinking/camus-fruitful-revolt/" target="__blank" rel="noreferrer noopener" className="font-semibold underline hover:text-gray-700 dark:hover:text-gray-300">embrace of the absurd</a>. When I'm not coding, I read <a href="https://www.goodreads.com/okkinn" target="__blank" rel="noreferrer noopener" className="font-semibold underline hover:text-gray-700 dark:hover:text-gray-300">books</a>—recently mostly non-fiction such as self-help, finance, and programming books.
+                    I'm currently pursuing a degree in <span className="font-semibold">computer science</span> at the <span className="font-semibold">University of the Philippines Los Baños</span>. My interest lies in the intersection of <span className="font-semibold">AI</span>, <span className="font-semibold">data science</span>, and <span className="font-semibold">finance</span>. I have a passion for the continuous pursuit of knowledge and growth and consider it as my <a href="https://bigthink.com/thinking/camus-fruitful-revolt/" target="__blank" rel="noreferrer noopener" className="underline hover:text-gray-700 dark:hover:text-gray-300">embrace of the absurd</a>. When I'm not coding, I read books—recently mostly non-fiction such as self-help, finance, and programming books.
                 </p>
                 <div className="flex flex-row items-center mt-6 space-x-6">
                     <a
