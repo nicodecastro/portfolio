@@ -1,7 +1,7 @@
 const userData = {
     name: "Nico De Castro",
     designation: "Computer Science Student",
-    // avatarUrl: "/avatar.png",
+    avatarUrl: "/avatar.png",
     address: "Santa Rosa City, Laguna, Philippines",
     projects: [
         {

@@ -6,8 +6,10 @@ import Footer from '@/components/Footer';
 
 
 export const metadata = {
-    title: "Nico De Castro - CS Student",
+    title: "Nico De Castro",
     description: "A 20-year old computer science student studying at the University of the Philippines Los Baños",
+    image: "/avatar.png",
+    type: "website",
 }
 
 const inter = Inter({ subsets: ['latin'] })
