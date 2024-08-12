@@ -10,7 +10,7 @@ const Footer = () => {
               <p>
                 Built with Next.js 14 and Tailwind CSS by <strong>Nico De Castro</strong>.
               </p>
-              <p>
+              <p className="text-sm">
                 <a href="https://www.flaticon.com/free-icons/letter-n" title="letter n icons">Letter n icons created by Laisa Islam Ani - Flaticon.</a>
               </p>
             </div>
