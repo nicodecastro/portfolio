@@ -46,7 +46,7 @@ const userData = {
         title: "Finance Co-Head",
         company: "Kappa Phi Sigma Conservation and Development Society ",
         year: "NOV 2023 — JAN 2024",
-        desc: "Led financial planning for the Kappanalig 2024 outreach program. Managed transparent financial reporting. Co-led a team of 6 in successful fundraising activities. Efforts resulted in raised 20,000 pesos through donations, sponsorships, and events, benefiting 55 children with essential goods.",
+        desc: "Led financial planning for the Kappanalig 2024 outreach program. Managed transparent financial reporting. Co-led a team of 6 in successful fundraising activities. Efforts resulted in raising 20,000 pesos through donations, sponsorships, and events, benefiting 55 children with essential goods.",
         skills: ["Team Leadership", "Project Management", "Organizational Skills", "Analytical Skills", "Data-Driven Decision Making"],
       },
     //   {
