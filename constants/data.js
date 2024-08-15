@@ -1,6 +1,6 @@
 const userData = {
     name: "Nico De Castro",
-    designation: "Laguna, Philippines📍",
+    designation: "Laguna, Philippines 📍",
     avatarUrl: "/avatar.png",
     address: "Santa Rosa City, Laguna, Philippines",
     projects: [
