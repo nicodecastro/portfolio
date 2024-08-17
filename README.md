@@ -1,6 +1,6 @@
 # Portfolio
 
-A portfolio website built with Next.js 14 and tailwindcss.
+A portfolio website built with Next.js and Tailwind CSS, hosted on Vercel.
 
 ## Roadmap
 
