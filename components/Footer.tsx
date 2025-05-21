@@ -15,7 +15,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-row items-center space-x-4">
-              <a
+              {/* <a
                 href={userData.socialLinks.twitter}
                 className="text-base font-normal text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100"
                 target="__blank"
@@ -23,7 +23,7 @@ const Footer = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-twitter-x h-5 w-5" viewBox="0 0 16 16">
                   <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg>
-              </a>
+              </a> */}
               <a
                 href={userData.socialLinks.linkedin}
                 className="text-base font-normal text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100"
@@ -43,10 +43,10 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-          </div>        
+          </div>
         </footer>
       </div>
     )
   }
-  
+
   export default Footer

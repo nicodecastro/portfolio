@@ -20,7 +20,7 @@ const Hero = () => {
                     I'm currently pursuing a degree in <span className="font-semibold">computer science</span> at the <span className="font-semibold">University of the Philippines Los Baños</span>. My interest lies in the intersection of <span className="font-semibold">AI</span>, <span className="font-semibold">data science</span>, and <span className="font-semibold">finance</span>. I have a passion for continuous learning and growth and consider it as my <a href="https://bigthink.com/thinking/camus-fruitful-revolt/" target="__blank" rel="noreferrer noopener" className="underline hover:text-gray-700 dark:hover:text-gray-300">embrace of the absurd</a>. When I'm not coding, I read books—recently mostly non-fiction such as self-help, finance, and programming books.
                 </p>
                 <div className="flex flex-row items-center mt-6 space-x-6">
-                    <a
+                    {/* <a
                     href={userData.socialLinks.twitter}
                     className="text-base font-normal text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100"
                     target="__blank"
@@ -28,7 +28,7 @@ const Hero = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-twitter-x h-6 w-6" viewBox="0 0 16 16">
                         <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                     </svg>
-                    </a>
+                    </a> */}
                     <a
                     href={userData.socialLinks.linkedin}
                     className="text-base font-normal text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100"
