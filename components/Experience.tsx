@@ -12,7 +12,7 @@ const Experience = () => {
             userData.experience.map((ele, i) => (
               <li className="mb-12" key={i}>
                 <div className="flex flex-col sm:flex-row sm:gap-8 md:gap-4">
-                  <header className="mb-2 mt-1 text-xs font-semibold tracking-wide flex-shrink-0">
+                  <header className="mb-2 mt-1 text-xs font-semibold tracking-wide flex-shrink-0 min-w-[150px]">
                     {ele.year}
                   </header>
                   <div>
