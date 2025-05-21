@@ -42,13 +42,20 @@ const userData = {
         },
     ],
     experience: [
-      {
-        title: "Finance Co-Head",
-        company: "Kappa Phi Sigma Conservation and Development Society ",
-        year: "NOV 2023 — JAN 2024",
-        desc: "Led financial planning for the Kappanalig 2024 outreach program. Managed transparent financial reporting. Co-led a team of 6 in successful fundraising activities. Efforts resulted in raising 20,000 pesos through donations, sponsorships, and events, benefiting 55 children with essential goods.",
-        skills: ["Team Leadership", "Project Management", "Organizational Skills", "Analytical Skills", "Data-Driven Decision Making"],
-      },
+        {
+            title: "Co-Captain",
+            company: "UPLB Men's Volleyball Team",
+            year: "AUG 2024-PRESENT",
+            desc: "Led and motivated a team of 20 players, fostering a culture of accountability and discipline. Planned and executed semestral team-building sessions, improving performance and collaboration among the team. Successfully raised funds to support team expenses by organizing and supervising multiple fundraising volleyball tournaments.",
+            skills: ["Team Leadership", "Event Management"]
+        },
+        {
+            title: "Finance Co-Head",
+            company: "Kappa Phi Sigma Conservation and Development Society ",
+            year: "NOV 2023 — JAN 2024",
+            desc: "Led financial planning for the Kappanalig 2024 outreach program. Managed transparent financial reporting. Co-led a team of 6 in successful fundraising activities. Efforts resulted in raising 20,000 pesos through donations, sponsorships, and events, benefiting 55 children with essential goods.",
+            skills: ["Team Leadership", "Project Management", "Organizational Skills", "Analytical Skills", "Data-Driven Decision Making"],
+        },
     //   {
     //     title: "Internship",
     //     company: "",
@@ -62,5 +69,5 @@ const userData = {
       github: "https://github.com/nicodecastro",
     },
   };
-  
+
   export default userData;
