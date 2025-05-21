@@ -20,7 +20,7 @@ const userData = {
             imgUrl: "/projects/elbidonation.png",
             imgAlt: "Elbi Donation System card",
             description: "Built a mobile donation app connecting donors and organizations, with Firebase Authentication for secure login, role-based access, Firebase Firestore for real-time data, and Firebase Storage for image handling. Added SMS and push notifications via Telephony and Firebase Cloud Messaging.",
-            technologies: ["Flutter", "Telephony", "Firebase"],
+            technologies: ["Flutter", "Firebase", "Telephony"],
         },
         {
             title: "AgriConnect",
@@ -38,7 +38,7 @@ const userData = {
           imgUrl: "/projects/foodup.png",
           imgAlt: "FoodUP Review App card",
           description: "Developed a food and restaurant review application as an academic project using Python, Tkinter GUI and MariaDB database. Designed and implemented complex database queries and schema and contributed full-stack development.",
-          technologies: ["Python", "MariaDB"],
+          technologies: ["Python", "MariaDB", "Tkinter"],
         },
         {
             title: "A Mage's Return",
