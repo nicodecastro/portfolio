@@ -5,6 +5,24 @@ const userData = {
     address: "Santa Rosa City, Laguna, Philippines",
     projects: [
         {
+            title: "LOLCODE Interpreter",
+            liveLink: "",
+            codeLink: "https://github.com/nicodecastro/lolcode-interpreter",
+            imgUrl: "/projects/lolcode.png",
+            imgAlt: "LOLCODE Interpreter card",
+            description: "Developed an interpreter for the LOLCODE programming language using Python 3, implementing lexical analysis, parsing, and execution for core language features. Built a custom graphical user interface using customtkinter, allowing users to write and run LOLCODE programs interactively.",
+            technologies: ["Python", "CustomTkinter"],
+        },
+        {
+            title: "Elbi Donation System",
+            liveLink: "",
+            codeLink: "https://github.com/nicodecastro/Elbi-Donation-System",
+            imgUrl: "/projects/elbidonation.png",
+            imgAlt: "Elbi Donation System card",
+            description: "Built a mobile donation app connecting donors and organizations, with Firebase Authentication for secure login, role-based access, Firebase Firestore for real-time data, and Firebase Storage for image handling. Added SMS and push notifications via Telephony and Firebase Cloud Messaging.",
+            technologies: ["Flutter", "Telephony", "Firebase"],
+        },
+        {
             title: "AgriConnect",
             liveLink: "",
             codeLink: "https://github.com/nicodecastro/AgriConnect",
