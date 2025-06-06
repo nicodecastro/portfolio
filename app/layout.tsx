@@ -15,19 +15,19 @@ export const metadata = {
 const inter = Inter({ subsets: ['latin'] })
 
 const RootLayout = ({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode
 }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-        <body className={inter.className} suppressHydrationWarning>
-            <ThemeProvider enableSystem={false} attribute="class">
-                <Navbar />
-                {children}
-                <Footer />
-            </ThemeProvider>
-        </body>
+      <body className={inter.className} suppressHydrationWarning>
+        <ThemeProvider enableSystem={false} attribute="class">
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
