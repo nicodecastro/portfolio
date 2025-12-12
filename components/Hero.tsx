@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section id="hero" className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 mb-16 md:mb-20">
       <h1 className="text-center mt-6 md:mt-0 lg:mt-6 font-bold text-3xl md:text-5xl lg:text-6xl">
-        Software Engineer.<br />Systems Thinker.
+        Software Engineer.<br />Thinking in Data.
       </h1>
       <div id="about" className="mt-16 scroll-mt-8 md:mt-24 lg:mt-28 flex flex-col items-start justify-between md:flex-row">
         <div className="p-4 md:ml-4 overflow-hidden md:order-last">
@@ -17,7 +17,7 @@ const Hero = () => {
                 Hello! I'm Nico.
             </h2>
             <p className="mt-3 dark:text-gray-200">
-              I'm currently pursuing a degree in <span className="font-semibold">computer science</span> at the <span className="font-semibold">University of the Philippines Los Baños</span>. Lately, I've been interested in <span className="font-semibold">software development</span> related to <span className="font-semibold">finance</span> and <span className="font-semibold">financial systems</span>. I have a passion for continuous learning and growth and consider it as my <a href="https://bigthink.com/thinking/camus-fruitful-revolt/" target="__blank" rel="noreferrer noopener" className="underline hover:text-gray-700 dark:hover:text-gray-300">embrace of the absurd</a>. When I'm not coding, I read books—recently mostly non-fiction such as self-help, finance, and programming books.
+              I'm currently pursuing a degree in <span className="font-semibold">computer science</span> at the <span className="font-semibold">University of the Philippines Los Baños</span>. Lately, I've developed a strong interest in <span className="font-semibold">statistics</span> and <span className="font-semibold">data analysis</span>, inspired by my courses in experimental design and biological statistics. I have a passion for continuous learning and growth and consider it as my <a href="https://bigthink.com/thinking/camus-fruitful-revolt/" target="__blank" rel="noreferrer noopener" className="underline hover:text-gray-700 dark:hover:text-gray-300">embrace of the absurd</a>. When I'm not coding, I read books—recently mostly non-fiction such as self-help and finance books.
             </p>
           <div className="flex flex-row items-center mt-6 space-x-6">
             {/* <a
