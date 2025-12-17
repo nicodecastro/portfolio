@@ -61,17 +61,17 @@ const userData = {
 ],
 experience: [
   {
+    title: "Software Developer Intern",
+    company: "Datalogic Systems Corporation",
+    year: "JUN 2025 — JULY 2025",
+    desc: "Deployed an internal monitoring dashboard using Laravel, React, and SQL Server, improving UI, data flow, and performance. Built a standalone CRUD Laravel application with secure RESTful APIs and maintained documentation to streamline onboarding. Created a Python-based Windows service automating the secure emailing of payslips using SQL Server.",
+  },
+  {
     title: "Co-Captain",
     company: "UPLB Men's Volleyball Team",
     year: "AUG 2024 — PRESENT",
     desc: "Led and motivated a team of 20 players, fostering a culture of accountability and discipline. Planned and executed semestral team-building sessions, improving performance and collaboration among the team. Successfully raised funds to support team expenses by organizing and supervising multiple fundraising volleyball tournaments.",
     skills: ["Team Leadership", "Event Management"]
-  },
-  {
-    title: "Software Developer Intern",
-    company: "Datalogic Systems Corporation",
-    year: "JUN 2025 — JULY 2025",
-    desc: "Deployed an internal monitoring dashboard using Laravel, React, and SQL Server, improving UI, data flow, and performance. Built a standalone CRUD Laravel application with secure RESTful APIs and maintained documentation to streamline onboarding. Created a Python-based Windows service automating the secure emailing of payslips using SQL Server.",
   },
   {
     title: "Finance Co-Head",
