@@ -1,21 +1,23 @@
 import Hero from "@/components/Hero";
-import TechStack from "@/components/TechStack";
-import FeaturedProjects from "@/components/FeaturedProjects";
+import About from "@/components/About";
 import Experience from "@/components/Experience";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import TechStack from "@/components/TechStack";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
-const Home = () => {
+export default function Home() {
   return (
-    <main>
+    <main id="main-content" className="portfolio">
       <Hero />
-      <div className="bg-[#F7F7F7] dark:bg-[#0E0E0E]">
-        <TechStack />
+      <div className="reading-column">
+        <About />
+        <Experience />
         <FeaturedProjects />
+        <TechStack />
+        <Contact />
+        <Footer />
       </div>
-      <Experience />
-      <Contact />
     </main>
-  )
+  );
 }
-
-export default Home;

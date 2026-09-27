@@ -1,35 +1,21 @@
-import '../styles/globals.css';
-import { Inter } from 'next/font/google'
-import { ThemeProvider } from 'next-themes'
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-
+import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 
 export const metadata = {
-  title: "Nico De Castro",
-  description: "Computer Science student studying at the University of the Philippines Los Baños",
-  image: "/avatar.png",
-  type: "website",
-}
+  title: "Nico De Castro | Software & Data",
+  description:
+    "Software engineering, databases, and analytical projects by Nico De Castro. Exploring the systems that make data useful.",
+};
 
-const inter = Inter({ subsets: ['latin'] })
-
-const RootLayout = ({
-  children,
-}: {
-  children: React.ReactNode
-}) => {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
-        <ThemeProvider enableSystem={false} attribute="class">
-          <Navbar />
+      <body>
+        <ThemeProvider enableSystem attribute="class" defaultTheme="system">
+          <a href="#main-content" className="skip-link">Skip to content</a>
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
-
-export default RootLayout

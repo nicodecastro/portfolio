@@ -1,39 +1,36 @@
-import userData from '@/constants/data'
-import React from 'react'
+import userData from "@/constants/data";
 
-const Experience = () => {
+export default function Experience() {
+  const [internship, ...leadership] = userData.experience;
   return (
-    <section id="experience" className="scroll-mt-8 mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-20 md:mb-32">
-      <h2 className="font-bold text-5xl lg:text-6xl text-black dark:text-white text-center mb-12">
-          Experience
-      </h2>
-      <ol>
-        {
-          userData.experience.map((ele, i) => (
-            <li className="mb-12" key={i}>
-              <div className="flex flex-col sm:flex-row sm:gap-8 md:gap-4">
-                <header className="mb-2 mt-1 text-xs font-semibold tracking-wide flex-shrink-0 min-w-[150px]">
-                  {ele.year}
-                </header>
-                <div>
-                  <h3>
-                    <div className="font-semibold">{ele.title}</div>
-                    <div className="text-gray-400 text-sm">{ele.company}</div>
-                  </h3>
-                  <p className="text-sm mt-2 dark:text-gray-200">
-                    {ele.desc}
-                  </p>
-                  <ul>
-                    {/* skills */}
-                  </ul>
-                </div>
-              </div>
-            </li>
-          ))
-        }
-      </ol>
+    <section id="experience" className="content-section">
+      <h2>Experience</h2>
+      <article className="experience-entry">
+        <p className="meta">{internship.year.replace("—", "-")}</p>
+        <h3>{internship.title}</h3>
+        <p className="organization">{internship.company}</p>
+        <ul className="contributions">
+          <li>Built an internal monitoring dashboard with Laravel, React, and SQL Server.</li>
+          <li>Created a Python Windows service to automate secure payslip emails using SQL Server.</li>
+          <li>Developed a standalone CRUD application with secure REST APIs and onboarding documentation.</li>
+        </ul>
+        <ul className="tags" aria-label="Technologies used">
+          {["Python", "SQL Server", "Laravel", "React", "REST APIs"].map(tool => <li key={tool}>{tool}</li>)}
+        </ul>
+      </article>
+      <details className="leadership">
+        <summary>Leadership & community <span aria-hidden="true">+</span></summary>
+        <div className="leadership-content">
+          {leadership.map(item => (
+            <article key={item.title}>
+              <p className="meta">{item.year.replace("—", "-")}</p>
+              <h3>{item.title}</h3>
+              <p className="organization">{item.company}</p>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
+      </details>
     </section>
-  )
+  );
 }
-
-export default Experience

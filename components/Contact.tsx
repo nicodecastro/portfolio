@@ -1,17 +1,10 @@
-import React from 'react'
-
-const CallToAction = () => {
+export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 md:px-12 lg:px-20 mb-16 md:mb-24">
-      <h2 className="text-black dark:text-gray-50 font-semibold">
-        <span className="text-2xl sm:text-5xl">Let's connect and</span><br />
-        <span className="text-2xl sm:text-5xl">explore opportunities in tech</span>
-      </h2>
-      <p className="text-black dark:text-gray-200 mt-2">
-        Feel free to send me an <a href="mailto:jtdecastro@up.edu.ph" className="font-bold border-b-2 text-gray-800 border-gray-800 dark:text-gray-300">email</a> @ jtdecastro@up.edu.ph.
-      </p>
+    <section id="contact" className="content-section contact">
+      <h2>Contact</h2>
+      <p className="lead">Have something in mind?</p>
+      <p>I’d love to talk about opportunities in software and data, interesting projects, or something you’re learning.</p>
+      <a className="contact-link" href="mailto:jtdecastro@up.edu.ph">jtdecastro@up.edu.ph <span aria-hidden="true">↗</span></a>
     </section>
-  )
+  );
 }
-
-export default CallToAction
