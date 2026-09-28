@@ -1,8 +1,8 @@
 const userData = {
   name: "Nico De Castro",
-  designation: "Laguna, Philippines 📍",
+  role: "Software & Data Engineering",
   avatarUrl: "/avatar.png",
-  address: "Santa Rosa City, Laguna, Philippines",
+  address: "Laguna, Philippines",
   projects: [
   {
     title: "LOLCODE Interpreter",
@@ -61,28 +61,66 @@ const userData = {
 ],
 experience: [
   {
+    type: "Work",
+    title: "Part-Time Java Tutor",
+    company: "Freelance",
+    year: "SEPT 2026 — PRESENT",
+    desc: [
+      "Provide one-on-one Java programming instruction covering object-oriented programming, data structures, algorithms, debugging, and software development fundamentals.",
+      "Design hands-on coding exercises and guide students through debugging and problem solving, adapting instruction to their skill level and learning needs.",
+    ],
+    technologies: ["Java", "Object-Oriented Programming", "Data Structures", "Algorithms"],
+  },
+  {
+    type: "Work",
+    title: "Freelance Software Engineer",
+    company: "Freelance",
+    year: "DEC 2025 — MAR 2026",
+    desc: [
+      "Developed Python-based data extraction workflows for a ~100 GB Microsoft SQL Server database containing 35+ tables and 200M+ combined rows, producing multiple CSV files for machine-learning use cases.",
+      "Implemented chunked and streamed processing in Python to reduce memory usage and improve runtime and reliability on low-compute client devices.",
+      "Implemented a research-based vulnerability-prioritization model as three Axonius queries across 12 departments, and contributed to dashboard design and automated email reporting.",
+    ],
+    technologies: ["Python", "Microsoft SQL Server", "Axonius", "CSV"],
+  },
+  {
+    type: "Work",
     title: "Software Developer Intern",
     company: "Datalogic Systems Corporation",
     year: "JUN 2025 — JULY 2025",
-    desc: "Deployed an internal monitoring dashboard using Laravel, React, and SQL Server, improving UI, data flow, and performance. Built a standalone CRUD Laravel application with secure RESTful APIs and maintained documentation to streamline onboarding. Created a Python-based Windows service automating the secure emailing of payslips using SQL Server.",
+    desc: [
+      "Built backend services and four REST endpoints using Laravel and Microsoft SQL Server against an existing read-only production database, supporting an internal monitoring dashboard for development and support requests, employee status, meetings, and deadlines.",
+      "Built a separate Laravel application with CRUD operations across 4–5 entities, exposing authenticated REST APIs with API-key protection for controlled read-write access to SQL Server data.",
+      "Developed a Python Windows service using watchdog to continuously detect newly generated payslip files, match recipients through SQL Server, and automate email delivery from an existing legacy payroll workflow.",
+    ],
+    technologies: ["Laravel", "Microsoft SQL Server", "REST APIs", "Python", "Windows Service"],
   },
   {
+    type: "Leadership",
     title: "Co-Captain",
     company: "UPLB Men's Volleyball Team",
     year: "AUG 2024 — PRESENT",
-    desc: "Led and motivated a team of 20 players, fostering a culture of accountability and discipline. Planned and executed semestral team-building sessions, improving performance and collaboration among the team. Successfully raised funds to support team expenses by organizing and supervising multiple fundraising volleyball tournaments.",
+    desc: [
+      "Led and motivated a team of 20 players, fostering a culture of accountability and discipline.",
+      "Planned and executed semestral team-building sessions, improving performance and collaboration among the team.",
+      "Raised funds to support team expenses by organizing and supervising multiple fundraising volleyball tournaments.",
+    ],
     skills: ["Team Leadership", "Event Management"]
   },
   {
+    type: "Leadership",
     title: "Finance Co-Head",
     company: "Kappa Phi Sigma Conservation and Development Society ",
     year: "NOV 2023 — JAN 2024",
-    desc: "Led financial planning for the Kappanalig 2024 outreach program. Managed transparent financial reporting. Co-led a team of 6 in successful fundraising activities. Efforts resulted in raising 20,000 pesos through donations, sponsorships, and events, benefiting 55 children with essential goods.",
+    desc: [
+      "Led financial planning and reporting for the Kappanalig 2024 outreach program.",
+      "Co-led a team of six in fundraising activities that raised 20,000 pesos through donations, sponsorships, and events.",
+      "The funds supported 55 children with essential goods.",
+    ],
     skills: ["Team Leadership", "Project Management", "Organizational Skills", "Analytical Skills", "Data-Driven Decision Making"],
   },
   ],
   socialLinks: {
-    twitter: "https://x.com/dcstnic",
     linkedin: "https://www.linkedin.com/in/nicodecastro/",
     github: "https://github.com/nicodecastro",
   },

@@ -1,33 +1,56 @@
 import userData from "@/constants/data";
 
+function ExperienceEntry({
+  item,
+}: {
+  item: (typeof userData.experience)[number];
+}) {
+  return (
+    <article className="experience-entry">
+      <p className="meta">{item.year.replace("—", "-")}</p>
+      <h3>{item.title}</h3>
+      <p className="organization">{item.company}</p>
+      {item.desc.length > 0 && (
+        <ul className="contributions">
+          {item.desc.map((description) => (
+            <li key={description}>{description}</li>
+          ))}
+        </ul>
+      )}
+      {"technologies" in item &&
+        item.technologies &&
+        item.technologies.length > 0 && (
+        <ul className="tags" aria-label="Technologies used">
+          {item.technologies.map((technology) => (
+            <li key={technology}>{technology}</li>
+          ))}
+        </ul>
+        )}
+    </article>
+  );
+}
+
 export default function Experience() {
-  const [internship, ...leadership] = userData.experience;
+  const workExperience = userData.experience.filter(
+    (item) => item.type === "Work",
+  );
+  const leadershipExperience = userData.experience.filter(
+    (item) => item.type === "Leadership",
+  );
+
   return (
     <section id="experience" className="content-section">
       <h2>Experience</h2>
-      <article className="experience-entry">
-        <p className="meta">{internship.year.replace("—", "-")}</p>
-        <h3>{internship.title}</h3>
-        <p className="organization">{internship.company}</p>
-        <ul className="contributions">
-          <li>Built an internal monitoring dashboard with Laravel, React, and SQL Server.</li>
-          <li>Created a Python Windows service to automate secure payslip emails using SQL Server.</li>
-          <li>Developed a standalone CRUD application with secure REST APIs and onboarding documentation.</li>
-        </ul>
-        <ul className="tags" aria-label="Technologies used">
-          {["Python", "SQL Server", "Laravel", "React", "REST APIs"].map(tool => <li key={tool}>{tool}</li>)}
-        </ul>
-      </article>
+      {workExperience.map((item) => (
+        <ExperienceEntry key={item.title} item={item} />
+      ))}
       <details className="leadership">
-        <summary>Leadership & community <span aria-hidden="true">+</span></summary>
+        <summary>
+          Leadership &amp; community <span aria-hidden="true">+</span>
+        </summary>
         <div className="leadership-content">
-          {leadership.map(item => (
-            <article key={item.title}>
-              <p className="meta">{item.year.replace("—", "-")}</p>
-              <h3>{item.title}</h3>
-              <p className="organization">{item.company}</p>
-              <p>{item.desc}</p>
-            </article>
+          {leadershipExperience.map((item) => (
+            <ExperienceEntry key={item.title} item={item} />
           ))}
         </div>
       </details>

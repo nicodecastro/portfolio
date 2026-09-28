@@ -1,13 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 
 const links = ["About", "Experience", "Projects", "Contact"];
 
 export default function Navbar() {
   const [active, setActive] = useState("about");
-  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,10 +36,6 @@ export default function Navbar() {
           );
         })}
       </nav>
-      <button className="theme-toggle" onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")} aria-label="Toggle color theme">
-        <span className="theme-symbol" aria-hidden="true" />
-        <span>Appearance</span>
-      </button>
     </div>
   );
 }

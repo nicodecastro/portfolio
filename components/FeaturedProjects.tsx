@@ -53,7 +53,7 @@ export default function FeaturedProjects() {
         <summary>More projects <span aria-hidden="true">+</span></summary>
         <div className="archive-list">{otherProjects.map(project => <article key={project.title}><h3><a href={project.codeLink} target="_blank" rel="noreferrer">{project.title} ↗</a></h3><p>{project.description.replaceAll("—", ": ")}</p><p className="meta">{project.technologies.join(" / ")}</p></article>)}</div>
       </details>
-      <a className="text-link" href={`${userData.socialLinks.github}?tab=repositories`} target="_blank" rel="noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
+      <a className="text-link" href={`${userData.socialLinks.github}?tab=repositories`} target="_blank" rel="noreferrer">Explore my GitHub profile <span aria-hidden="true">↗</span></a>
     </section>
   );
 }
