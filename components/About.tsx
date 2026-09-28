@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about" className="content-section about">
       <h2>About</h2>
-      <p className="lead">I started out writing software, and the more data I handled,<br className="wide-only" />the more I liked building things around it.</p>
+      <p className="lead">I started out writing software, and the more data I handled,<br className="wide-only" /> the more I liked building things around it.</p>
       <p>
         I’m a graduating BS Computer Science student at the <strong>University of the Philippines Los Baños</strong>, currently building toward a career in Data Engineering.
       </p>
