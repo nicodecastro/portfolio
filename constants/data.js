@@ -78,7 +78,7 @@ experience: [
     year: "DEC 2025 — MAR 2026",
     desc: [
       "Developed Python-based data extraction workflows for a ~100 GB Microsoft SQL Server database containing 35+ tables and 200M+ combined rows, producing multiple CSV files for machine-learning use cases.",
-      "Implemented chunked and streamed processing in Python to reduce memory usage and improve runtime and reliability on low-compute client devices.",
+      "Applied chunked and streamed processing strategies in Python to handle large tables efficiently reducing memory usage and improving runtime and reliability on low-compute client devices.",
       "Implemented a research-based vulnerability-prioritization model as three Axonius queries across 12 departments, and contributed to dashboard design and automated email reporting.",
     ],
     technologies: ["Python", "Microsoft SQL Server", "Axonius", "CSV"],
@@ -90,8 +90,9 @@ experience: [
     year: "JUN 2025 — JULY 2025",
     desc: [
       "Built backend services and four REST endpoints using Laravel and Microsoft SQL Server against an existing read-only production database, supporting an internal monitoring dashboard for development and support requests, employee status, meetings, and deadlines.",
-      "Built a separate Laravel application with CRUD operations across 4–5 entities, exposing authenticated REST APIs with API-key protection for controlled read-write access to SQL Server data.",
+      "Built a separate Laravel application with CRUD operations across 5 entities, exposing authenticated REST APIs with API-key protection for controlled read-write access to SQL Server data.",
       "Developed a Python Windows service using watchdog to continuously detect newly generated payslip files, match recipients through SQL Server, and automate email delivery from an existing legacy payroll workflow.",
+      "Deployed the monitoring system on IIS and implemented automatic refresh and recovery mechanisms to maintain continuous operation on a shared TV display.",
     ],
     technologies: ["Laravel", "Microsoft SQL Server", "REST APIs", "Python", "Windows Service"],
   },

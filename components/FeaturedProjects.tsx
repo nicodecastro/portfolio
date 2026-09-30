@@ -11,7 +11,7 @@ const selected = [
   {
     title: "Generic Solvers App",
     category: "Numerical computing",
-    summary: "An interactive application for interpolation, regression, and diet optimization.",
+    summary: "An interactive web application for interpolation, regression, and diet optimization.",
     contribution: "Implemented quadratic spline interpolation, polynomial regression, and the simplex method. Built the interface with R Shiny and deployed it on ShinyApps.",
   },
   {
