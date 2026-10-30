@@ -121,8 +121,24 @@ details[open] > summary > span { transform: rotate(45deg); }
 .project-thumbnail { display: block; padding: 7px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); margin-top: 3px; transition: border-color .2s, transform .2s; }
 .project-thumbnail:hover { border-color: var(--accent); transform: translateY(-2px); }
 .project-thumbnail img { display: block; width: 100%; height: auto; aspect-ratio: 1.55; object-fit: contain; }
+.project-thumbnail { cursor: zoom-in; width: 100%; }
+.image-modal { --modal-gutter: 24px; --modal-header-height: 68px; --modal-inset: 7px; width: max-content; max-width: calc(100vw - 2 * var(--modal-gutter)); max-height: calc(100dvh - 2 * var(--modal-gutter)); margin: auto; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 16px; background: var(--background); color: var(--ink); }
+.image-modal::backdrop { background: rgb(5 15 30 / 80%); }
+.image-modal-content { padding: 0 var(--modal-inset) var(--modal-inset); }
+.image-modal-header { display: flex; contain: inline-size; height: var(--modal-header-height); align-items: center; justify-content: space-between; gap: 12px; padding-inline: 12px; }
+.image-modal-header h2 { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0; font-size: clamp(17px, 2vw, 22px); font-weight: 550; letter-spacing: -.025em; line-height: 1.35; }
+.image-modal-close { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; color: var(--secondary); background: var(--surface); transition: background .18s, color .18s, transform .18s; }
+.image-modal-close:hover { background: var(--line); color: var(--ink); }
+.image-modal-close:active { transform: scale(.94); }
+.image-modal-preview { display: block; width: auto; height: auto; max-width: min(1200px, calc(100vw - 2 * var(--modal-gutter) - 2 * var(--modal-inset) - 2px)); max-height: calc(100dvh - 2 * var(--modal-gutter) - var(--modal-header-height) - var(--modal-inset) - 2px); border-radius: 4px; }
+@media (max-width: 520px) {
+  .image-modal { --modal-gutter: 12px; --modal-header-height: 60px; border-radius: 12px; }
+  .image-modal-header { padding-inline: 8px; }
+}
 .project h3 { font-size: 16px; font-weight: 550; letter-spacing: -.015em; margin-top: 4px; }
 .project h3 span { font-size: 12px; margin-left: 3px; }
+.project-title-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 4px 12px; }
+.project-live-link { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; font-size: 12px; white-space: nowrap; }
 .project-body > p:not(.meta) { font-size: 13px; line-height: 1.7; margin-top: 10px; }
 .project .tags { margin-top: 12px; }
 .project-details { margin-top: 10px; }

@@ -11,7 +11,7 @@ const userData = {
     imgUrl: "/projects/vcsets.png",
     imgAlt: "VC SETS card",
     description: "Developed a volleyball statistics app that helps scorers record player actions during matches and turn them into individual performance statistics. Built for Windows, Android, and the web, it supports offline scoring, combines records from two scorers into one official result, and includes tournament scheduling and standings.",
-    technologies: ["Flutter, SQLite"],
+    technologies: ["Flutter", "SQLite"],
   },
   {
     title: "LOLCODE Interpreter",

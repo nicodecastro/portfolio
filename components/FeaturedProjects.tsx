@@ -1,12 +1,12 @@
-import Image from "next/image";
+import ProjectImage from "./ProjectImage";
 import userData from "@/constants/data";
 
 const selected = [
   {
     title: "VC SETS",
     category: "Cross-Platform Development",
-    summary: "A cross-platform volleyball player statistics tracker for offline match scoring, with tools for managing tournaments and standings.",
-    contribution: "Developed a cross-platform volleyball statistics app with player performance tracking, offline scoring, dual-scorer reconciliation, and tournament management.",
+    summary: "A offline-first volleyball player statistics and tournament tracking PWA",
+    contribution: "Developed a cross-platform volleyball statistics app with player statistic tracking, offline scoring, dual-scorer reconciliation, and tournament management.",
   },
   {
     title: "LOLCODE Interpreter",
@@ -32,17 +32,18 @@ export default function FeaturedProjects() {
           const project = userData.projects.find(p => p.title === item.title)!;
           return (
             <article className="project" key={item.title}>
-              <a className="project-thumbnail" href={project.codeLink} target="_blank" rel="noreferrer" aria-label={`View ${project.title} source on GitHub`}>
-                <Image src={project.imgUrl} alt={`${project.title} application screenshot`} width={280} height={180} sizes="(max-width: 520px) 35vw, 130px" />
-              </a>
+              <ProjectImage src={project.imgUrl} title={project.title} />
               <div className="project-body">
                 <p className="meta">{item.category}</p>
-                <h3><a href={project.codeLink} target="_blank" rel="noreferrer">{project.title} <span aria-hidden="true">↗</span></a></h3>
+                <div className="project-title-row">
+                  <h3><a href={project.codeLink} target="_blank" rel="noreferrer">{project.title} <span aria-hidden="true">↗</span></a></h3>
+                  {project.liveLink && <a className="project-live-link" href={project.liveLink} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} live app`}>Live app <span aria-hidden="true">↗</span></a>}
+                </div>
                 <p>{item.summary}</p>
                 <ul className="tags" aria-label="Technologies used">{project.technologies.map(tool => <li key={tool}>{tool}</li>)}</ul>
                 <details className="project-details">
                   <summary>My contribution <span aria-hidden="true">+</span></summary>
-                  <div><p>{item.contribution}</p><div className="project-links"><a href={project.codeLink} target="_blank" rel="noreferrer">Source code ↗</a>{project.liveLink && <a href={project.liveLink} target="_blank" rel="noreferrer">Live app ↗</a>}</div></div>
+                  <div><p>{item.contribution}</p><div className="project-links"><a href={project.codeLink} target="_blank" rel="noreferrer">Source code ↗</a></div></div>
                 </details>
               </div>
             </article>
