@@ -5,6 +5,15 @@ const userData = {
   address: "Laguna, Philippines",
   projects: [
   {
+    title: "VC SETS",
+    liveLink: "https://nicodecastro.github.io/vc-sets/",
+    codeLink: "https://github.com/nicodecastro/vc-sets",
+    imgUrl: "/projects/vcsets.png",
+    imgAlt: "VC SETS card",
+    description: "Developed a volleyball statistics app that helps scorers record player actions during matches and turn them into individual performance statistics. Built for Windows, Android, and the web, it supports offline scoring, combines records from two scorers into one official result, and includes tournament scheduling and standings.",
+    technologies: ["Flutter, SQLite"],
+  },
+  {
     title: "LOLCODE Interpreter",
     liveLink: "",
     codeLink: "https://github.com/nicodecastro/lolcode-interpreter",

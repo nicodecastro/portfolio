@@ -3,22 +3,22 @@ import userData from "@/constants/data";
 
 const selected = [
   {
-    title: "FoodUP",
-    category: "Database design",
-    summary: "A restaurant review application with a relational database and a Python desktop interface.",
-    contribution: "Designed the MariaDB schema and implemented complex database queries, alongside full-stack application development.",
+    title: "VC SETS",
+    category: "Cross-Platform Development",
+    summary: "A cross-platform volleyball player statistics tracker for offline match scoring, with tools for managing tournaments and standings.",
+    contribution: "Developed a cross-platform volleyball statistics app with player performance tracking, offline scoring, dual-scorer reconciliation, and tournament management.",
+  },
+  {
+    title: "LOLCODE Interpreter",
+    category: "Programming Languages & Interpreters",
+    summary: "A desktop-based interpreter for the LOLCODE programming language",
+    contribution: "Developed a LOLCODE interpreter in Python 3 with lexical analysis, parsing, and code execution, along with a CustomTkinter interface for writing and running programs interactively.",
   },
   {
     title: "Generic Solvers App",
     category: "Numerical computing",
     summary: "An interactive web application for interpolation, regression, and diet optimization.",
     contribution: "Implemented quadratic spline interpolation, polynomial regression, and the simplex method. Built the interface with R Shiny and deployed it on ShinyApps.",
-  },
-  {
-    title: "AgriConnect",
-    category: "Full-stack development",
-    summary: "An academic e-commerce platform connecting farmers and consumers.",
-    contribution: "Led a team of four through planning and execution, and contributed full-stack development with React, Express, MongoDB, and REST APIs.",
   },
 ];
 
