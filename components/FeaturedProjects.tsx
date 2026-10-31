@@ -5,13 +5,13 @@ const selected = [
   {
     title: "VC SETS",
     category: "Cross-Platform Development",
-    summary: "A offline-first volleyball player statistics and tournament tracking PWA",
+    summary: "A offline-first volleyball player statistics and tournament tracking PWA.",
     contribution: "Developed a cross-platform volleyball statistics app with player statistic tracking, offline scoring, dual-scorer reconciliation, and tournament management.",
   },
   {
     title: "LOLCODE Interpreter",
     category: "Programming Languages & Interpreters",
-    summary: "A desktop-based interpreter for the LOLCODE programming language",
+    summary: "A desktop-based interpreter for the LOLCODE programming language.",
     contribution: "Developed a LOLCODE interpreter in Python 3 with lexical analysis, parsing, and code execution, along with a CustomTkinter interface for writing and running programs interactively.",
   },
   {

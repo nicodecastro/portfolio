@@ -9,7 +9,7 @@ const groups: [string, string[]][] = [
     "JavaScript, TypeScript, React, Next.js, Tailwind CSS,",
     "Node.js, PHP, Express.js, Laravel, OAuth, JWT, REST",
   ]],
-  ["Platforms & Tools", ["Git, Github, VS Code, Discord, Teams, Windows Services"]],
+  ["Platforms & Tools", ["Git, Github, Codex, VS Code, Discord, Teams, Windows Services"]],
 ];
 
 export default function TechStack() {
