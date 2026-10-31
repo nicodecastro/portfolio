@@ -36,14 +36,17 @@ export default function FeaturedProjects() {
               <div className="project-body">
                 <p className="meta">{item.category}</p>
                 <div className="project-title-row">
-                  <h3><a href={project.codeLink} target="_blank" rel="noreferrer">{project.title} <span aria-hidden="true">↗</span></a></h3>
-                  {project.liveLink && <a className="project-live-link" href={project.liveLink} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} live app`}>Live app <span aria-hidden="true">↗</span></a>}
+                  <h3>{project.title}</h3>
+                  <div className="project-links">
+                    {project.liveLink && <a href={project.liveLink} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} live app`}>Live app <span aria-hidden="true">↗</span></a>}
+                    <a href={project.codeLink} target="_blank" rel="noreferrer" aria-label={`View ${project.title} source code`}>Source code <span aria-hidden="true">↗</span></a>
+                  </div>
                 </div>
                 <p>{item.summary}</p>
                 <ul className="tags" aria-label="Technologies used">{project.technologies.map(tool => <li key={tool}>{tool}</li>)}</ul>
                 <details className="project-details">
                   <summary>My contribution <span aria-hidden="true">+</span></summary>
-                  <div><p>{item.contribution}</p><div className="project-links"><a href={project.codeLink} target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+                  <div><p>{item.contribution}</p></div>
                 </details>
               </div>
             </article>
