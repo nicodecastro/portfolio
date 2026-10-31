@@ -1,23 +1,11 @@
-const groups: [string, string[]][] = [
-  ["Languages & analysis", ["Python, SQL, C, JavaScript, Java, PHP, R"]],
-  ["Data & Databases", [
-    "Microsoft SQL Server, MySQL, MariaDB",
-    "MongoDB, Firebase, Supabase",
-    "CSV-based processing, Excel, Google Sheets"
-  ]],
-  ["Applications & APIs", [
-    "JavaScript, TypeScript, React, Next.js, Tailwind CSS,",
-    "Node.js, PHP, Express.js, Laravel, OAuth, JWT, REST",
-  ]],
-  ["Platforms & Tools", ["Git, Github, Codex, VS Code, Discord, Teams, Windows Services"]],
-];
+import userData from "@/constants/data";
 
 export default function TechStack() {
   return (
     <section className="content-section toolkit" aria-labelledby="toolkit-heading">
       <h2 id="toolkit-heading">Toolkit</h2>
-      <p>The tools I’ve used across my projects and internship.</p>
-      <dl>{groups.map(([label, lines]) => 
+      <p>The tools I’ve used across my projects and work.</p>
+      <dl>{userData.techStack.map(({ label, lines }) =>
         <div key={label}>
             <dt>{label}</dt>
             <dd>

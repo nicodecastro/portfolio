@@ -1,34 +1,13 @@
 import ProjectImage from "./ProjectImage";
 import userData from "@/constants/data";
 
-const selected = [
-  {
-    title: "VC SETS",
-    category: "Cross-Platform Development",
-    summary: "A offline-first volleyball player statistics and tournament tracking PWA.",
-    contribution: "Developed a cross-platform volleyball statistics app with player statistic tracking, offline scoring, dual-scorer reconciliation, and tournament management.",
-  },
-  {
-    title: "LOLCODE Interpreter",
-    category: "Programming Languages & Interpreters",
-    summary: "A desktop-based interpreter for the LOLCODE programming language.",
-    contribution: "Developed a LOLCODE interpreter in Python 3 with lexical analysis, parsing, and code execution, along with a CustomTkinter interface for writing and running programs interactively.",
-  },
-  {
-    title: "Generic Solvers App",
-    category: "Numerical computing",
-    summary: "An interactive web application for interpolation, regression, and diet optimization.",
-    contribution: "Implemented quadratic spline interpolation, polynomial regression, and the simplex method. Built the interface with R Shiny and deployed it on ShinyApps.",
-  },
-];
-
 export default function FeaturedProjects() {
-  const otherProjects = userData.projects.filter(project => !selected.some(item => item.title === project.title));
+  const otherProjects = userData.projects.filter(project => !userData.selectedProjects.some(item => item.title === project.title));
   return (
     <section id="projects" className="content-section">
       <div className="section-title"><h2>Selected projects</h2><span className="section-note">Academic & personal work</span></div>
       <div className="project-list">
-        {selected.map(item => {
+        {userData.selectedProjects.map(item => {
           const project = userData.projects.find(p => p.title === item.title)!;
           return (
             <article className="project" key={item.title}>

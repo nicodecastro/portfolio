@@ -3,6 +3,42 @@ const userData = {
   role: "Software & Data Engineering",
   avatarUrl: "/avatar.png",
   address: "Laguna, Philippines",
+  techStack: [
+    { label: "Languages & analysis", lines: ["Python, SQL, C, JavaScript, Java, PHP, R"] },
+    { label: "Data & Databases", lines: [
+      "Microsoft SQL Server, MySQL, MariaDB",
+      "MongoDB, Firebase, Supabase",
+      "CSV-based processing, Excel, Google Sheets",
+    ] },
+    { label: "Applications & APIs", lines: [
+      "JavaScript, TypeScript, React, Next.js, Tailwind CSS,",
+      "Node.js, PHP, Express.js, Laravel, OAuth, JWT, REST",
+    ] },
+    { label: "Platforms & Tools", lines: ["Git, Github, Codex, VS Code, Discord, Teams, Windows Services"] },
+  ],
+  selectedProjects: [
+    {
+      title: "VC SETS",
+      caseStudyLink: "/projects/vc-sets",
+      category: "Cross-Platform Development",
+      summary: "A offline-first volleyball player statistics and tournament tracking PWA.",
+      contribution: "Developed a cross-platform volleyball statistics app with player statistic tracking, offline scoring, dual-scorer reconciliation, and tournament management.",
+    },
+    {
+      title: "LOLCODE Interpreter",
+      caseStudyLink: "",
+      category: "Programming Languages & Interpreters",
+      summary: "A desktop-based interpreter for the LOLCODE programming language.",
+      contribution: "Developed a LOLCODE interpreter in Python 3 with lexical analysis, parsing, and code execution, along with a CustomTkinter interface for writing and running programs interactively.",
+    },
+    {
+      title: "Generic Solvers App",
+      caseStudyLink: "",
+      category: "Numerical computing",
+      summary: "An interactive web application for interpolation, regression, and diet optimization.",
+      contribution: "Implemented quadratic spline interpolation, polynomial regression, and the simplex method. Built the interface with R Shiny and deployed it on ShinyApps.",
+    },
+  ],
   projects: [
   {
     title: "VC SETS",
@@ -109,8 +145,9 @@ experience: [
     type: "Leadership",
     title: "Co-Captain",
     company: "UPLB Men's Volleyball Team",
-    year: "AUG 2024 — PRESENT",
+    year: "MAY 2025 — DEC 2025",
     desc: [
+      "Member of the UPLB Men's Volleyball Team since 2022.",
       "Led and motivated a team of 20 players, fostering a culture of accountability and discipline.",
       "Planned and executed semestral team-building sessions, improving performance and collaboration among the team.",
       "Raised funds to support team expenses by organizing and supervising multiple fundraising volleyball tournaments.",
