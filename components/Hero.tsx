@@ -3,11 +3,9 @@
 import Image from "next/image";
 import userData from "@/constants/data";
 import Navbar from "./Navbar";
-import { useTheme } from "next-themes";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Hero() {
-  const { resolvedTheme, setTheme } = useTheme();
-
   return (
     <header className="profile">
       <div className="profile-intro">
@@ -28,10 +26,7 @@ export default function Hero() {
         </div>
         <p>{userData.address}</p>
       </div>
-      <button className="theme-toggle" onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")} aria-label="Toggle color theme">
-        <span className="theme-symbol" aria-hidden="true" />
-        <span>Appearance</span>
-      </button>
+      <ThemeToggle />
     </header>
   );
 }

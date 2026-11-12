@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectImage from "./ProjectImage";
 import userData from "@/constants/data";
 
@@ -23,10 +24,14 @@ export default function FeaturedProjects() {
                 </div>
                 <p>{item.summary}</p>
                 <ul className="tags" aria-label="Technologies used">{project.technologies.map(tool => <li key={tool}>{tool}</li>)}</ul>
-                <details className="project-details">
-                  <summary>My contribution <span aria-hidden="true">+</span></summary>
-                  <div><p>{item.contribution}</p></div>
-                </details>
+                {item.caseStudyLink ? (
+                  <Link className="project-case-study-link" href={item.caseStudyLink} aria-label={`See ${project.title} case study`}>See Case Study<span aria-hidden="true">→</span></Link>
+                ) : (
+                  <details className="project-details">
+                    <summary>My contribution <span aria-hidden="true">+</span></summary>
+                    <div><p>{item.contribution}</p></div>
+                  </details>
+                )}
               </div>
             </article>
           );

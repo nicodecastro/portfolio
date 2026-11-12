@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useId, useRef } from "react";
 
-export default function ProjectImage({ src, title }: { src: string; title: string }) {
+export default function ProjectImage({ src, title, sizes = "(max-width: 520px) 35vw, 130px", width, height }: { src: string; title: string; sizes?: string; width?: number; height?: number }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const captionId = useId();
   const previousOverflow = useRef<string | null>(null);
@@ -26,7 +26,7 @@ export default function ProjectImage({ src, title }: { src: string; title: strin
   return (
     <>
       <button className="project-thumbnail" type="button" onClick={openPreview} aria-label={`Enlarge ${title} screenshot`} aria-haspopup="dialog">
-        <Image src={src} alt={`${title} application screenshot`} width={280} height={180} sizes="(max-width: 520px) 35vw, 130px" />
+        <Image src={src} alt={`${title} application screenshot`} width={width ?? 280} height={height ?? 180} sizes={sizes} />
       </button>
       <dialog ref={dialog} className="image-modal" aria-labelledby={captionId} onClose={restoreScroll} onClick={event => {
         if (event.target === event.currentTarget) dialog.current?.close();
@@ -38,7 +38,7 @@ export default function ProjectImage({ src, title }: { src: string; title: strin
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
             </button>
           </header>
-          <Image className="image-modal-preview" src={src} alt={`${title} application screenshot`} width={1600} height={1000} sizes="95vw" />
+          <Image className="image-modal-preview" src={src} alt={`${title} application screenshot`} width={width ?? 1600} height={height ?? 1000} sizes="95vw" />
         </div>
       </dialog>
     </>

@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body>
         <ThemeProvider enableSystem attribute="class" defaultTheme="system">
           <a href="#main-content" className="skip-link">Skip to content</a>
