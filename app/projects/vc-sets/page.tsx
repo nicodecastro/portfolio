@@ -36,7 +36,7 @@ export default function VCSetsCaseStudy() {
               <span><strong>Nico De Castro</strong></span>
             </div>
             <figure className="case-study-figure">
-                <ProjectImage src="/projects/vcsets-home.png" title={project.title} width={1850} height={880} sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
+                <ProjectImage src="/projects/vcsets-home.png" title={project.title} width={1850} height={880} sizes="(max-width: 760px) calc(100vw - 40px), 720px" loading="eager" />
                 <figcaption>VC SETS Homepage.</figcaption>
             </figure>
             <section aria-labelledby="introduction-title">
@@ -102,70 +102,80 @@ export default function VCSetsCaseStudy() {
             </div>
           </section>
 
-          <section className="case-study-section" aria-labelledby="workflow-title">
+          <section className="case-study-section case-study-workflow" aria-labelledby="workflow-title">
             <h2 id="workflow-title">The workflow</h2>
-            <figure className="case-study-figure">
-              <ProjectImage src={project.imgUrl} title={project.title} sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-              <figcaption>The stat tracker in action.</figcaption>
-            </figure>
-            <div className="case-study-prompt">
-              <h3>Step 1: Setup the tournament</h3>
-              <p>Staff create the tournament, add teams and player rosters, and configure the match rules. They then generate matchups for round robin, knockout, or pool play followed by a knockout bracket.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/setup-tournament.png" title="Sample tournament page" sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>A sample tournament already setup.</figcaption>
-              </figure>
-            </div>
-            <div className="case-study-prompt">
-              <h3>Step 2: Back up the tournament</h3>
-              <p>Before the matches, staff export a full backup containing the tournament data. Keeping a backup copy provides a way to restore the records for other devices.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/data-screen.png" title="Data page of the app" sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>Data page with options for importing/exporting a full backup or importing a .vcgame package.</figcaption>
-              </figure>
-            </div>
-            <div className="case-study-prompt">
-              <h3>Step 3: Prepare both scoring devices</h3>
-              <p>Staff can import the backup on the scoring device. They open the scheduled game and each scorer selects an assigned team, and both choose the same first server. Before scoring each set, they save their team&apos;s starting lineup.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/prepare-devices.png" title="Two devices with different teams being scored" sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>Two separate devices with different teams being scored.</figcaption>
-              </figure>
-            </div>
-            <div className="case-study-prompt">
-              <h3>Step 4: Record the match independently</h3>
-              <p>Both scorers record every rally winner and player actions for their assigned team. Each device keeps its own log locally, so scoring does not require a live connection between the devices.</p>
-              <p>For example, when Team A wins a rally, both scorers award the point to Team A. Team A&apos;s scorer can also record the player action that earned it, such as a successful attack. Meanwhile, Team B's scorer will record the error that caused it such as a misreceive.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/record-match.png" title="A device recording a team of an ongoing game." sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>A device recording a team of an ongoing game.</figcaption>
-              </figure>
-            </div>
-            <div className="case-study-prompt">
-              <h3>Step 5: Exchange and compare the logs</h3>
-              <p>After the match, the second scorer exports their completed .vcgame file. Staff import it on the tournament device and open reconciliation.</p>
-              <p>The app aligns entries by set and rally sequence, then flags missing rallies and differences in winners or scores.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/reconciliation.png" title="Reconciliation screen." sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>Reconciliation screen showing disagreements between the exported logs.</figcaption>
-              </figure>
-            </div>
-            <div className="case-study-prompt">
-              <h3>Step 6: Resolve differences and finalize</h3>
-              <p>Staff review each disagreement and choose the correct entry or make a manual correction. The app checks the reconciled result against the match rules before finalization. It retains the scorer logs and saves an official record with the finalization details.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/summary-1.png" title="Summary screen of a finalized game." sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>Summary screen of a finalized game.</figcaption>
-              </figure>
-            </div>
-            <div className="case-study-prompt">
-              <h3>Step 7: Prepare statistics and awards</h3>
-              <p>Finalized matches feed standings and player statistics. Staff export the player statistics as CSV and transfer them into the club&apos;s existing Google Sheets report, where the award formulas calculate top performers and individual awards.</p>
-              <figure className="case-study-figure case-study-figure--supporting">
-                <ProjectImage src="/projects/reports-screen.png" title="Reports screen." sizes="(max-width: 760px) calc(100vw - 40px), 720px" />
-                <figcaption>Reports screen.</figcaption>
-              </figure>
-            </div>
+            <ol className="workflow-steps">
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 1: Set up the tournament</h3>
+                  <p>Staff create the tournament, add teams and player rosters, and configure the match rules. They then generate matchups for round robin, knockout, or pool play followed by a knockout bracket.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/setup-tournament.png" title="Sample tournament page" sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Teams, rosters, and matchups in a configured tournament.</figcaption>
+                </figure>
+              </li>
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 2: Back up the tournament</h3>
+                  <p>Before the matches, staff export a full backup containing the tournament data. Keeping a backup copy provides a way to restore the records for other devices.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/data-screen.png" title="Data page of the app" sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Full tournament backups and game package imports.</figcaption>
+                </figure>
+              </li>
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 3: Prepare both scoring devices</h3>
+                  <p>Staff import the backup on both scoring devices and open the scheduled game. Each scorer selects an assigned team, both choose the same first server, and each saves their team&apos;s starting lineup before every set.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/prepare-devices.png" title="Two devices with different teams being scored" sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Two separate devices with different teams being scored.</figcaption>
+                </figure>
+              </li>
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 4: Record the match independently</h3>
+                  <p>Both scorers record every rally winner and player actions for their assigned team. Each device keeps its own log locally, so scoring does not require a live connection between the devices.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/record-match.png" title="A device recording a team of an ongoing game." sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Both scorers award the rally point to Team A; each records their own team&apos;s action, such as an attack or a misreceive.</figcaption>
+                </figure>
+              </li>
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 5: Exchange and compare the logs</h3>
+                  <p>After the match, the second scorer exports their completed .vcgame file. Staff import it on the tournament device and open reconciliation. The app aligns entries by set and rally sequence, then flags missing rallies and differences in winners or scores.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/reconciliation.png" title="Reconciliation screen." sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Reconciliation screen showing disagreements between the exported logs.</figcaption>
+                </figure>
+              </li>
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 6: Resolve differences and finalize</h3>
+                  <p>Staff review each disagreement and choose the correct entry or make a manual correction. The app checks the reconciled result against the match rules before finalization. It retains the scorer logs and saves an official record with the finalization details.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/summary-1.png" title="Summary screen of a finalized game." sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Summary screen of a finalized game.</figcaption>
+                </figure>
+              </li>
+              <li className="workflow-step">
+                <div className="workflow-step-copy">
+                  <h3>Step 7: Prepare statistics and awards</h3>
+                  <p>Finalized matches feed standings and player statistics. Staff export the player statistics as CSV and transfer them into the club&apos;s existing Google Sheets report, where the award formulas calculate top performers and individual awards.</p>
+                </div>
+                <figure className="case-study-figure">
+                  <ProjectImage src="/projects/reports-screen.png" title="Reports screen." sizes="(max-width: 759px) calc(100vw - 40px), (max-width: 1039px) calc(60vw - 44px), 580px" />
+                  <figcaption>Reports screen.</figcaption>
+                </figure>
+              </li>
+            </ol>
           </section>
 
           <section className="case-study-section" aria-labelledby="engineering-title">

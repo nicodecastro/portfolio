@@ -213,6 +213,16 @@ html:has(.case-study) { scroll-behavior: auto; }
 .case-study-figure .project-thumbnail img { aspect-ratio: auto; }
 .case-study-figure figcaption { margin-top: 8px; color: var(--secondary); font-size: 12px; }
 .case-study .footer { margin-top: 12px; }
+.workflow-steps { display: grid; gap: 32px; list-style: none; margin: 0; padding: 0; }
+.workflow-step { display: grid; gap: 16px; min-width: 0; align-items: start; }
+.workflow-step-copy { min-width: 0; }
+.workflow-step-copy p { font-size: 14px; }
+.workflow-step .case-study-figure { min-width: 0; margin: 0; }
+@media (min-width: 760px) {
+  .case-study-workflow { width: min(1000px, calc(100vw - 40px)); margin-inline: calc((720px - min(1000px, 100vw - 40px)) / 2); }
+  .workflow-steps { gap: 40px; }
+  .workflow-step { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 32px; }
+}
 @media (max-width: 1050px) {
   .portfolio { width: calc(100% - 80px); grid-template-columns: 290px minmax(0, 1fr); gap: 60px; }
   .profile h1 { font-size: 33px; }

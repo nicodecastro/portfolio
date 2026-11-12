@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useId, useRef } from "react";
 
-export default function ProjectImage({ src, title, sizes = "(max-width: 520px) 35vw, 130px", width, height }: { src: string; title: string; sizes?: string; width?: number; height?: number }) {
+export default function ProjectImage({ src, title, sizes = "(max-width: 520px) 35vw, 130px", width, height, loading }: { src: string; title: string; sizes?: string; width?: number; height?: number; loading?: "eager" | "lazy" }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const captionId = useId();
   const previousOverflow = useRef<string | null>(null);
@@ -26,7 +26,7 @@ export default function ProjectImage({ src, title, sizes = "(max-width: 520px) 3
   return (
     <>
       <button className="project-thumbnail" type="button" onClick={openPreview} aria-label={`Enlarge ${title} screenshot`} aria-haspopup="dialog">
-        <Image src={src} alt={`${title} application screenshot`} width={width ?? 280} height={height ?? 180} sizes={sizes} />
+        <Image src={src} alt={`${title} application screenshot`} width={width ?? 280} height={height ?? 180} sizes={sizes} loading={loading} />
       </button>
       <dialog ref={dialog} className="image-modal" aria-labelledby={captionId} onClose={restoreScroll} onClick={event => {
         if (event.target === event.currentTarget) dialog.current?.close();
